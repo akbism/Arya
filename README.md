@@ -19,12 +19,20 @@ Then, I carried out detailed exploratory data analysis (EDA) of the training dat
 - Outlier detection
 - Univariate analysis
 - Segmented univariate analysis
-The EDA could provide me some idea about the relevant features. However, I didn't finalized the features yet as there can be non-linear dependencies. 
-Outcome of EDA: Absolutely redundant features and list of outliers (to be removed from the training dataset before model training)
+The EDA could provide me some idea about the relevant features. However, I didn't finalized the features yet as there can be non-linear dependencies. <br><br>
+**Outcome of EDA**: Absolutely redundant features and list of outliers (to be removed from the training dataset before model training)
 
 ### Model Training
-First of all, the 
+First of all, I removed the redundant features and removed the outliers from the training dataset.
+Next, I set a binary classification experiment environment to test multiple classification models on this dataset. 
+Next, I selected the best out-of-box classification model performing on the given dataset. 
+Then, I finetuned the model and extracted the feature importance.
+Then, I selected the top final features on the basis of feature importance and shapley value. 
+The selected model is further finetuned after considering the selected features.
+Finally, I got the fine-tuned classification model, which would be used for model inference. 
 
+### Model Inference
+The fine-tuned model is used to predict the 'Y' value of the given dataset.
 
 
 
