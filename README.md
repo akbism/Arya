@@ -37,7 +37,7 @@ The validation dataset was used to estimate the model performance.
 The evaluation metrics - precision, recall, f1-score and AUC - were used to compare and select the model.
 
 ### Model Inference
-The fine-tuned model is used to predict the 'Y' value of the given dataset.
+The fine-tuned model is used to predict the 'Y' value of the given dataset. The final prediction of the test_set has been provided in the csv file "test_Set_prediction.csv".
 
 ## List of dependencies/libraries 
 
