@@ -8,26 +8,27 @@ or mail the assignment
 2. Split the training data in training and validation set with ratio of 4:1 to evaluate performance of the model on validation set.
 
 ## General Approach
-The dataset doesn't have the named features. Hence, we can't analyse as per the business / domain.
+The dataset doesn't have the named features. Hence, we can't analyze as per the business / domain.
+
 ### Exploratory Data Analysis
 A high level descriptive analysis of the training dataset was carried out to understand the data.
-Then, the training dataset was split in two parts - training and validation (4:1 ratio) so that there was no training-validation data leakage in the process and finally, an estimate for the model performance can be calculated.
+Then, the training dataset was split into two parts - training and validation (4:1 ratio) so that there was no training-validation data leakage in the process and finally, an estimate for the model performance can be calculated.
 Then, a detailed exploratory data analysis (EDA) of the training dataset was carried out as given below:
 - Analysis of missing value - none found
-- Analsis of columns with little information 
+- Analysis of columns with little information 
 - Analysis of multi-collinearity
 - Outlier detection
 - Univariate analysis
 - Segmented univariate analysis
 The EDA could provide some idea about the relevant features. However, the features were not finalized yet as there could be non-linear dependencies. <br><br>
-**Outcome of EDA**: Absolutely redundant features and list of outliers (to be removed from the training dataset before model training)
+**Outcome of EDA**: list of redundant features and outliers (to be removed from the training dataset before model training)
 
 ### Model Training
 First of all, the redundant features and the outliers were removed from the training dataset.
 Next, a binary classification experiment environment was set to test multiple classification models on this dataset. 
 Next, the best out-of-box classification model was selected as per performance on the training dataset. 
 Then, the model was finetuned and the feature importance was extracted.
-Then, the top final features set was selected on the basis of feature importance and shapley value. 
+Then, the top final features set was selected based on the feature importance and shapley value. 
 The selected model was further finetuned after considering the selected features.
 Finally, I got the fine-tuned classification model, which would be used for model inference. 
 
