@@ -39,7 +39,27 @@ The evaluation metrics - precision, recall, f1-score and AUC - were used to comp
 ### Model Inference
 The fine-tuned model is used to predict the 'Y' value of the given dataset.
 
-### Notes:
+## List of dependencies/libraries 
+
+Libraries
+1. markupsafe   ==  2.0.1
+2. pycaret      ==  2.3.10
+3. seaborn      ==  0.11.2
+4. pandas       ==  1.3.5
+5. scikit-learn ==  0.23.2
+6. lightgbm     ==  3.3.2
+7. shap         ==  0.41.0
+8. numpy        ==  1.19.5
+
+### Scripts
+- 1_Arya_EDA.ipynb - to be run locally
+- 2_Arya_Model_Training_and_Model_Performance_Analysis.ipynb - to be run in google colab
+- 3_Arya_Model_Inference.ipynb - to be run in google colab
+
+To run in google colab, we must set our google drive folder.
+If you get error in importing pycaret.classification, restart the runtime. 
+
+## Notes:
 1. As the dataset is slightly imbalanced, Hence SMOTE technique was used to balance the dataset. 
 2. StratifiedKFold strategy was used for cross validation.
 
